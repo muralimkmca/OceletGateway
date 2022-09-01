@@ -1,0 +1,53 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Food",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5090
+        }
+      ],
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/v1/api/getfoodlist"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Food",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5090
+        }
+      ],
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamPathTemplate": "/v1/api/insertfood"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Food",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5095
+        }
+      ],
+      "UpstreamHttpMethod": [ "Put" ],
+      "UpstreamPathTemplate": "/v1/api/updatefoodlist"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Food",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5095
+        }
+      ],
+      "UpstreamHttpMethod": [ "Delete" ],
+      "UpstreamPathTemplate": "/v1/api/deletefoodlist"
+    }
+  ],
+  "GlobalConfiguration": {}
+}
